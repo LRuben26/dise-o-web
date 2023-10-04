@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio5</title>
+</head>
+<body>
+    <center><h1>Random</h1></center>
+</body>
+</html>
+<script>
+
+function salto_de_linea(){
+document.wrive("<br>")
+document.wrive("<br>")
+document.wrive("<br>")
+}
+function mostrarMensaje(mensaje){
+document.write(mensaje);
+salto_de_linea();
+}
+
+var numero =  Math.round(Math.random()*10) 
+console.log(numero)
+
+//if (numero>0){
+ //   mostrarMensaje(numero)
+//}else{
+  //  mostrarMensaje("el numero es 0")
+//}
+var cont=0;
+while(cont<numero){
+alert(numero)
+console.log(numero)
+//console.log(cont)
+mostrarMensaje(numero)
+cont++;
+}
+
+</script>

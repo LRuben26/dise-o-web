@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+<body>
+    <center><h1>juega piedra, papel o tijera</h1></center>
+</body>
+</html>
+<script>
+    function salto_de_linea(){
+document.wrive("<br>")
+document.wrive("<br>")
+document.wrive("<br>")
+}
+function mostrarMensaje(mensaje){
+document.write(mensaje);
+salto_de_linea();
+}
+//Este juego es de la Piedra, papel o tijera::::::::::::::::
+function juego(minimo, maximo)
+{
+    var numero = Math.floor( Math.random() * (maximo - minimo + 1) + minimo );
+    return numero;
+}
+
+var piedra = 0;
+var papel = 1;
+var tijera = 2;
+
+var opciones = ["Piedra", "Papel", "Tijera"];
+
+var opcionUsuario;
+var opcionNuestra = juego(0,2);
+
+opcionUsuario = prompt("Elige una de estas Opciones:    Piedra: 0  " +"Papel: 1   "+"Tijera: 2  ", 0);
+
+alert("Elegiste " + opciones[opcionUsuario]);
+alert("Yo elegi " + opciones[opcionNuestra]);
+
+if(opcionUsuario == piedra)
+{
+    if(opcionNuestra == piedra)
+    {
+        alert("una mas");
+    }
+    else
+     if(opcionNuestra == papel)
+    {
+        alert("y Nimodo siga participando : ");
+    }
+    else
+     if(opcionNuestra == tijera)
+    {
+        alert("Ganaste por fin jajajaja");
+    }
+}
+else if(opcionUsuario == papel)
+{
+    if(opcionNuestra == piedra)
+    {
+        alert("Ganaste por fin jajajaja");
+    }
+    else if(opcionNuestra == papel)
+    {
+        alert("Uno mas");
+    }
+    else if(opcionNuestra == tijera)
+    {
+        alert("y Nimodo siga participando :");
+    }
+}
+else if(opcionUsuario == tijera)
+{
+    if(opcionNuestra == piedra)
+    {
+        alert("y Nimodo siga participando :");
+    }
+    else if(opcionNuestra == papel)
+    {
+        alert("Ganaste por fin jajajaja");
+    }
+    else if(opcionMaquina == tijera)
+    {
+        alert("Uno mas");
+    }
+}
+else
+{
+    alert("chaw te bañas");
+}
+
+
+
+
+</script>
